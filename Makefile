@@ -3,4 +3,4 @@ build:
 	docker build -t store .
 
 run:
-	docker run -it -p 8080:8080 store 
+	docker run -it -d -p 80:8080 store 
