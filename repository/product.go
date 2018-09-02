@@ -2,7 +2,7 @@ package repository
 
 type ProductStorage interface {
 	SaveProduct(Product) error
-	GetProduct(string) Product
+	GetProduct(string) (*Product, error)
 }
 
 type Product struct {
